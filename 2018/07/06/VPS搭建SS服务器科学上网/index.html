@@ -103,7 +103,7 @@
 <meta property="og:description" content="Debian下shadowsocks-libev一键安装脚本本脚本适用环境：系统支持：Debian/Ubuntu内存要求：≥128M日期：2018 年 06 月 01 日关于本脚本：Debian 或 Ubuntu 下一键安装 libev 版的 Shadowsocks 最新版本。该版本的特点是内存占用小（600k左右），使用 libev 和 C 编写，低 CPU 消耗，甚至可以安装在基于 Open">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.alexyang.me/wp-content/uploads/2016/02/ishadowsocks.jpg">
-<meta property="og:updated_time" content="2018-07-08T14:29:59.176Z">
+<meta property="og:updated_time" content="2018-07-08T15:21:44.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VPS搭建SS服务器科学上网">
 <meta name="twitter:description" content="Debian下shadowsocks-libev一键安装脚本本脚本适用环境：系统支持：Debian/Ubuntu内存要求：≥128M日期：2018 年 06 月 01 日关于本脚本：Debian 或 Ubuntu 下一键安装 libev 版的 Shadowsocks 最新版本。该版本的特点是内存占用小（600k左右），使用 libev 和 C 编写，低 CPU 消耗，甚至可以安装在基于 Open">
@@ -370,12 +370,11 @@
 <p><strong>客户端下载：</strong><br><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
 <p><strong>使用方法：</strong><br>使用root用户登录，运行以下命令：    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev-debian.sh </span><br><span class="line">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian.sh</span><br><span class="line">chmod +x shadowsocks-libev-debian.sh</span><br><span class="line">./shadowsocks-libev-debian.sh 2&gt;&amp;1 | tee shadowsocks-libev-debian.log</span><br></pre></td></tr></table></figure>
-<p>安装完成后，脚本提示如下：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Congratulations, Shadowsocks-libev server install completed!</span><br><span class="line">Your Server IP        :your_server_ip</span><br><span class="line">Your Server Port      :your_server_port</span><br><span class="line">Your Password         :your_password</span><br><span class="line">Your Encryption Method:your_encryption_method</span><br><span class="line"></span><br><span class="line">Welcome to visit:https://teddysun.com/358.html</span><br><span class="line">Enjoy it!</span><br></pre></td></tr></table></figure>
-<p><strong>卸载方法：</strong><br>使用 root 用户登录，运行以下命令：  </p>
+<h3 id="安装完成后，脚本提示如下："><a href="#安装完成后，脚本提示如下：" class="headerlink" title="安装完成后，脚本提示如下："></a>安装完成后，脚本提示如下：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Congratulations, Shadowsocks-libev server install completed!</span><br><span class="line">Your Server IP        :your_server_ip</span><br><span class="line">Your Server Port      :your_server_port</span><br><span class="line">Your Password         :your_password</span><br><span class="line">Your Encryption Method:your_encryption_method</span><br><span class="line"></span><br><span class="line">Welcome to visit:https://teddysun.com/358.html</span><br><span class="line">Enjoy it!</span><br></pre></td></tr></table></figure>
+<h3 id="卸载方法："><a href="#卸载方法：" class="headerlink" title="卸载方法："></a><strong>卸载方法：</strong></h3><p>使用 root 用户登录，运行以下命令：  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./shadowsocks-libev-debian.sh uninstall</span><br></pre></td></tr></table></figure>
 <p>本脚本安装完成后，已将 Shadowsocks-libev 加入开机自启动。</p>
-<p>使用命令：<br>启动：</p>
+<h3 id="使用命令："><a href="#使用命令：" class="headerlink" title="使用命令："></a>使用命令：</h3><p>启动：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/shadowsocks start</span><br></pre></td></tr></table></figure>
 <p>停止：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/shadowsocks stop</span><br></pre></td></tr></table></figure>
@@ -424,8 +423,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/08/googlBBR/" rel="prev" title="google BBR 加速">
-                google BBR 加速 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/08/googlBBR/" rel="prev" title="Google BBR 加速">
+                Google BBR 加速 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -560,7 +559,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Debian下shadowsocks-libev一键安装脚本"><span class="nav-number">1.</span> <span class="nav-text">Debian下shadowsocks-libev一键安装脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本脚本适用环境："><span class="nav-number">1.1.</span> <span class="nav-text">本脚本适用环境：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Debian下shadowsocks-libev一键安装脚本"><span class="nav-number">1.</span> <span class="nav-text">Debian下shadowsocks-libev一键安装脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本脚本适用环境："><span class="nav-number">1.1.</span> <span class="nav-text">本脚本适用环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装完成后，脚本提示如下："><span class="nav-number">1.2.</span> <span class="nav-text">安装完成后，脚本提示如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卸载方法："><span class="nav-number">1.3.</span> <span class="nav-text">卸载方法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用命令："><span class="nav-number">1.4.</span> <span class="nav-text">使用命令：</span></a></li></ol></li></ol></div>
             
 
           </div>
